@@ -11,6 +11,12 @@ Installation
  3. Create a file named [whatever].lua in the languages directory, and add translations to it as per the examples file.
   Your should probably have languages in their own files.
 
+API
+---
+
+GetTranslation( Slug (string), cPlayer ) - Returns the translated string for the provided cPlayer object.
+GetConsoleTranslation ( Slug (string) )  - Returns the translated string for the console.
+
 Pitfalls
 --------
 
