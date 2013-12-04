@@ -14,7 +14,7 @@ Installation
 API
 ---
 
-GetTranslation( Slug (string), cPlayer ) - Returns the translated string for the provided cPlayer object.
+GetTranslation( cPlayer,  Slug (string) ) - Returns the translated string for the provided cPlayer object.
 GetConsoleTranslation ( Slug (string) )  - Returns the translated string for the console.
 
 Pitfalls
