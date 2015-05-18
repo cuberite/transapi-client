@@ -30,10 +30,7 @@ local defaultLang = "en" -- Language provided with the plugin. Users must not ch
 function GetTranslation( Player, Slug )
 
 	-- Get a reference to the helper plugin.
-	local helper = cPluginManager():Get():GetPlugin( "TransAPI" )
-
-	-- Ask the helper plugin what language the player likes.
-	local preferredLanguage = helper:Call( "GetLanguage", Player )
+	local preferredLanguage = cPluginManager():CallPlugin("TransAPI", "GetLanguage", Player)
 
 	if g_Languages[preferredLanguage][Slug] ~= nil then
 		return g_Languages[preferredLanguage][Slug]
@@ -45,10 +42,7 @@ end
 
 function GetConsoleTranslation( Slug )
 
-	-- Get a reference to the helper plugin.
-	local helper = cPluginManager:Get():GetPlugin( "TransAPI" )
-
-	local preferredLanguage = helper:Call( "GetConsoleLanguage" )
+	local preferredLanguage = cPluginManager():CallPlugin("TransAPI", "GetConsoleLanguage")
 
 	if g_Languages[preferredLanguage][Slug] ~= nil then
 		return g_Languages[preferredLanguage][Slug]
