@@ -1,7 +1,7 @@
 transapi-client
 ===============
 
-The client library for the TransAPI API for MCServer.
+The client library for the TransAPI API for Cuberite.
 
 Installation
 ------------
@@ -14,8 +14,8 @@ Installation
 API
 ---
 
-GetTranslation( cPlayer,  Slug (string) ) - Returns the translated string for the provided cPlayer object.
-GetConsoleTranslation ( Slug (string) )  - Returns the translated string for the console.
+    GetTranslation(cPlayer, Slug (string)) - Returns the translated string for the provided cPlayer object.
+    GetConsoleTranslation(Slug (string)) - Returns the translated string for the console.
 
 Pitfalls
 --------
